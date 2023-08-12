@@ -1,0 +1,19 @@
+#loading {
+    z-index: 99999;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading svg {
+    width: 30px;
+    height: 30px;
+
+}
+
+.is-loading {
+    overflow-y: hidden;
+}

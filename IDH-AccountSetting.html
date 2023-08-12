@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Happiness Day .Co</title>
+
+    <!-- Font: Signika Negative -->
+    <!-- font-family: 'Signika Negative', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <!-- Font: Edu NSW ACT Foundation -->
+    <!-- font-family: 'Edu NSW ACT Foundation', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2912/2912810.png">
+    
+    <link rel="stylesheet" href="css/IDH-Login.css">
+
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="page-part">
+        <nav>
+            <div id="logo"><a href="/IDH-Homepage.html">IHD.CO</a></div>
+            <div><ul id="nav-options">
+                <a href="/IDH-HappinessBlogspot.html">
+                    <li id="nav-hb">HAPPINESS BLOSPOT</li>
+                </a>
+                <a href="/IDH-AboutUs.html">
+                    <li id="nav-au">ABOUT US</li>
+                </a>
+                <a href="/IDH-User.html">
+                    <li id="nav-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                    </li>
+                </a>
+            </ul></div>
+        </nav>
+    </div>
+
+    <div class="page-part">
+        <form id="account-setting-form">
+            <div class="form-part form-title">
+                <h2>ACCOUNT SETTING</h1>
+            </div>
+
+            <div class="form-part questions">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username" required/>
+                </div>
+
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob"  required/>
+                </div>
+
+                <div>
+                    <label for="pronoun" required>Pronoun</label>
+                    <select id="pronoun" required>
+                        <option value="he">He/Him</option>
+                        <option value="she">She/Her</option>
+                        <option value="they">They/Them</option>
+                        <option value="other">Other</option>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="receive-newsletter"/>
+                    <label id="receive-newsletter-label" for="receive-newsletter">I want to receive newsletter from IHD.Co</label>
+                </div>
+            </div>
+        
+            <div class="form-part"><button type="submit">Save changes</button></div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/IDH-AccountSetting.js"></script>
+
+    
+</body>
+</html>

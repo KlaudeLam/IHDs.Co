@@ -1,0 +1,131 @@
+/* RESET CSS*/
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-bottom: 50px;
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+    background-color:rgb(252, 232, 57);
+    background-image: url("https://simple-repeat.com/img/pngimg/basic/grid/Solid256gridDotted32.png");
+
+    /* background-image: url("https://www.pngkit.com/png/full/91-911156_dot-grid-png-black-and-white.png"); */
+    
+}
+div {
+    line-height: 135%;
+}
+
+/* GENERAL */
+.description {
+    font-size: 20px;
+    margin-top: 8px;
+}
+.left {
+    text-align: left;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0; /*use this to avoid nav bar interfere w/ Header area */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    margin-left: 18px;
+    padding: 20px;
+
+    font-size: 30px;
+}
+#nav-options {
+    margin-right: 18px;
+}
+#nav-options li {
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    list-style: none;
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+#nav-options li:hover {
+    background-color: rgb(238, 237, 237);
+    cursor: pointer;
+}
+svg {
+    width: 10px;
+}
+
+.page-part {
+    margin-top: 125px;
+}
+
+.form-part {
+    width: 87%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-title>h2,.already-account {
+    align-self: center;
+}
+
+input,select,button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 210, 210);;
+    padding: 2px 10px;
+}
+
+button {
+    margin-top: 0;
+}
+#receive-newsletter,label[for="receive-newsletter"]{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#receive-newsletter{
+    height: 14px;
+    width: 20px;
+    margin: 0;
+}
+
+button {
+    background-color: rgb(39, 39, 39);
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+form {
+    max-width: 25em;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    /* border: 3px solid rgb(0, 0, 0); */
+    border-radius: 20px;
+    padding: 30px 20px 30px;
+}
