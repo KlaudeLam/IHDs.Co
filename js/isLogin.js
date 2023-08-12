@@ -22,13 +22,34 @@ export default app;
 const routeMeta = [
     {
         route: "/IDH-Login.html",
-        requireAuth: false, //ko can dang nhap
-        requireGuest: true, //dang nhap thi ko the access trang nay nua
+        requireAuth: false, //can dang nhap: ko can
+        requireGuest: true, //can la guest = can (dang nhap thi ko the access trang nay nua)
+    },
+    {
+        route: "/IDH-Signup.html",
+        requireAuth: false, //can dang nhap: ko can
+        requireGuest: true, //can la guest = can (dang nhap thi ko the access trang nay nua)
+    },
+    {
+        route: "/IDH-AccountSetting.html",
+        requireAuth: true, //can dang nhap: ko can
     },
     {
         route: "/IDH-User.html",
-        requireAuth: true, //ko can dang nhap
-    }
+        requireAuth: true,
+    },
+    {
+        route: "/IDH-AboutUs.html",
+        requireAuth: false, //can dang nhap: ko can
+    },
+    {
+        route: "/IDH-HappinessBlogspot.html",
+        requireAuth: false, //can dang nhap: ko can
+    },
+    {
+        route: "/IDH-Homepage.html",
+        requireAuth: false, //can dang nhap: ko can
+    },
 ]
 
 function getRouteMeta() {
