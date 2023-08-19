@@ -1,13 +1,16 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
-import app from "./isLogin.js";
+import app from "./IDH-Common.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("login-form");
 
   // syntax loginForm? = if loginForm exists
   loginForm?.addEventListener("submit", (event) => {
-
     event.preventDefault();
 
     const usermail = document.getElementById("usermail").value;
@@ -41,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(user);
         // IdP data available using getAdditionalUserInfo(result)
         // ...
-      }).catch((error) => {
+      })
+      .catch((error) => {
         // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
@@ -51,6 +55,5 @@ document.addEventListener("DOMContentLoaded", function () {
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
       });
-
-  })
+  });
 });
