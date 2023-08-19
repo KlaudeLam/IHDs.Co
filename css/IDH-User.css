@@ -1,87 +1,12 @@
-/* RESET CSS*/
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    font-family: 'Signika Negative', sans-serif;
-}
-div {
-    line-height: 135%;
-}
-
-/* GENERAL */
-.description {
-    font-size: 20px;
-    margin-top: 8px;
-}
-.left {
-    text-align: left;
-}
-.ha {
-    text-decoration: none;
-    font-size: 38px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-/* NAV */
-nav {
-    position: fixed;
-    top: 0; /*use this to avoid nav bar interfere w/ Header area */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#logo {
-    margin-left: 18px;
-    padding: 20px;
-
-    font-size: 30px;
-}
-#nav-options {
-    margin-right: 18px;
-}
-#nav-options li {
-    margin-left: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    list-style: none;
-    display: inline-block;
-}
-nav a {
-    text-decoration: none;
-    color: black;
-}
-#nav-options li:not(#nav-hb):hover {
+#nav-options li:not(#nav-user):hover {
     background-color: rgb(238, 237, 237);
     cursor: pointer;
 }
 #nav-user {
     background-color:rgb(255, 242, 125);
 }
-svg {
-    width: 10px;
-}
 
 /* HEADER */
-header {
-    box-shadow: rgba(90, 90, 90, 0.05) 0px 1px 2px 0px;
-    margin-top: 50px;
-    background-color:rgb(252, 232, 57);
-    width: 100%;
-    min-height: 400px;
-    height: fit-content;
-    padding: 100px 0 100px 12%;
-    /* padding-left: 90px; */
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 #avatar {
     border-radius: 50%;
     min-height: 120px;
@@ -91,50 +16,12 @@ header {
     background-size: cover;
     background-position: center;
 }
-header .description {
-    font-size: 25px;
-}
-.header-big {
-    font-size: 50px;
-    font-weight: 500;
-}
+
 #header-buttons {
     display: flex;
     gap: 3%;
 }
-.post-button {
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: rgb(39, 39, 39);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-
-    width: fit-content;
-    padding: 20px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.post-button > a {
-    text-decoration: none;
-    color: white;
-}
-.post-button:hover {
-    background-color: black;
-    cursor: pointer;
-}
-/* WEB-CONTENT */
-.body-part {
-    padding: 100px 12%;
-    height: fit-content;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /* BLOGPOST */
-
 /* BLOGPOST - Post */
 #polaroid-display {
     height: auto;
@@ -217,54 +104,4 @@ header .description {
 .number-button:not(.active):hover{
     background-color: rgb(39, 39, 39);;
     cursor: pointer;
-}
-
-/* NEWSLETTER */
-#newsletter {
-    background-color:rgb(252, 232, 57);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-form button {
-    color: white;
-    font-size: 15px;
-    font-family: 'Signika Negative', sans-serif;
-}
-.newsletter-question {
-    width: 80%;
-}
-.newsletter-question > label {
-    font-size: 20px;
-}
-.newsletter-question textarea {
-    resize: none;
-    box-sizing: border-box;
-    margin-top: 13px;
-    padding: 2px;
-    border-radius: 5px;
-    width:100%;
-    min-width: 100%;
-    max-width: 100%;
-    height: 31px;
-    min-height: 31px;
-    max-height: 31px;
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 20px;
-}
-
-/* FOOTER */
-footer {
-    /* background-color:rgb(252, 232, 57); */
-    background-color: rgb(39, 39, 39);
-    /* background-color: black; */
-    color: white;
-    /* color: rgb(252, 232, 57); */
-    width: 100%;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
 }
