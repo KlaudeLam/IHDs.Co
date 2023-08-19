@@ -17,6 +17,7 @@ const auth = getAuth(app);
 const database = getDatabase(app);
 
 // Thumbnail ------------------------------------------------------------------
+// Preview thumbnail ngay lúc đăng bài
 const storage = getStorage(app);
 const dropzone = document.getElementById("dropzone-file");
 dropzone?.addEventListener("change", (e) => {
@@ -56,14 +57,19 @@ const editor = new EditorJS({
 });
 
 // Upload ---------------------------------------------------------------------
+// Tạo nút lưu (thiếu: sau khi nhấn post thì disable)
 const saveButton = document.getElementById("save");
 saveButton?.addEventListener("click", async (e) => {
   e.preventDefault();
   e.stopPropagation();
   const title = document.getElementById("first_name").value;
-  const thumbnail = document.getElementById("dropzone-file").files[0];
+  // Lấy thumbnail
+  const thumbnail = document.getElementById("dropzone-file").files[0]; 
+  // Lấy content
   const content = await editor.save();
+  // Kiểm tra có mục nào chưa điền chưa (Toastify)
   if (title.trim() === "" || !thumbnail || content.blocks.length === 0) {
+    // Cách dùng Toastify để tạo thông báo
     Toastify({
       text: "Please fill all fields",
       duration: 3000,
@@ -74,9 +80,11 @@ saveButton?.addEventListener("click", async (e) => {
     }).showToast();
     return;
   }
-
+// Lưu ảnh theo syntax của firebase
   const storageRef = ref(storage, `${thumbnail.name}`);
+  // uploadbytes đưa ảnh lên
   await uploadBytes(storageRef, thumbnail).then((snapshot) => {
+    // Lấy link mà mình có thể xem ngay ảnh trên firebase (để mn đều xem đc ảnh)
     getDownloadURL(snapshot.ref).then((url) => {
       const currentUser = auth.currentUser;
 
@@ -85,10 +93,13 @@ saveButton?.addEventListener("click", async (e) => {
         thumbnail: url,
         content,
         uid: currentUser.uid,
+        name: currentUser.displayName,
+        time: Date.now(),
       };
 
       const postListRef = dbRef(database, "/posts");
       console.log(postListRef);
+      // push set: đưa dữ liệu lên realtime database
       const newPostRef = push(postListRef);
       set(newPostRef, data).then(() => {
         Toastify({

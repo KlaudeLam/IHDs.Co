@@ -9,13 +9,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDhdw7NYmn5oKb8xI_z-EWO7brwWbU6uVI",
-  authDomain: "spck-f1a02.firebaseapp.com",
-  databaseURL: "https://spck-f1a02-default-rtdb.firebaseio.com",
-  projectId: "spck-f1a02",
-  storageBucket: "spck-f1a02.appspot.com",
-  messagingSenderId: "316762566527",
-  appId: "1:316762566527:web:acfb63e3a172864dcf344a",
+  apiKey: "AIzaSyDRnpQxfKCQEKHALkTbouIapSss_L6N-cI",
+  authDomain: "idhco-c0614.firebaseapp.com",
+  databaseURL: "https://idhco-c0614-default-rtdb.firebaseio.com",
+  projectId: "idhco-c0614",
+  storageBucket: "idhco-c0614.appspot.com",
+  messagingSenderId: "162374943476",
+  appId: "1:162374943476:web:030f7995a6141aeb5fd4a1"
 };
 
 // Initialize Firebase
@@ -36,11 +36,11 @@ const routeMeta = [
   },
   {
     route: "/IDH-AccountSetting.html",
-    requireAuth: true, //can dang nhap: ko can
+    requireAuth: true, 
   },
   {
     route: "/IDH-WriteBlog.html",
-    requireAuth: true, //can dang nhap: ko can
+    requireAuth: true, 
   },
   {
     route: "/IDH-User.html",
@@ -56,6 +56,10 @@ const routeMeta = [
   },
   {
     route: "/IDH-Homepage.html",
+    requireAuth: false, //can dang nhap: ko can
+  },
+  {
+    route: "/IDH-Blog.html",
     requireAuth: false, //can dang nhap: ko can
   },
 ];
