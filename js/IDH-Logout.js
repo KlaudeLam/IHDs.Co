@@ -1,10 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const logoutButton = document.getElementById("logout-button");
-  
-    logoutButton?.addEventListener("click", function () {
-      
-      localStorage.removeItem("isLogin");
-      alert("Successfully log out");
-      window.location.href = "/IDH-User.html";
+import {
+  getAuth,
+  signOut,
+} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import app from "./IDH-Common.js";
+
+const auth = getAuth(app);
+
+const logoutBtn = document.querySelector("#logout-button > a");
+logoutBtn?.addEventListener("click", () => {
+  signOut(auth)
+    .then(() => {
+      // Sign-out successful.
+    })
+    .catch((error) => {
+      // An error happened.
     });
-  });
+});

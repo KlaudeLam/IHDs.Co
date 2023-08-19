@@ -1,19 +1,33 @@
+@tailwind components;
+@tailwind utilities;
+
 #loading {
-    z-index: 99999;
-    position: fixed;
-    inset: 0;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  z-index: 99999;
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #loading svg {
-    width: 30px;
-    height: 30px;
-
+  width: 30px;
+  height: 30px;
 }
 
 .is-loading {
-    overflow-y: hidden;
+  overflow-y: hidden;
+}
+
+.cdx-search-field {
+  @apply h-8;
+}
+
+.cdx-search-field__input {
+  @apply h-[26px];
+}
+
+.codex-editor__redactor {
+  @apply !pb-0;
 }

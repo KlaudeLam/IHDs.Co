@@ -9,12 +9,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDRnpQxfKCQEKHALkTbouIapSss_L6N-cI",
-  authDomain: "idhco-c0614.firebaseapp.com",
-  projectId: "idhco-c0614",
-  storageBucket: "idhco-c0614.appspot.com",
-  messagingSenderId: "162374943476",
-  appId: "1:162374943476:web:030f7995a6141aeb5fd4a1",
+  apiKey: "AIzaSyDhdw7NYmn5oKb8xI_z-EWO7brwWbU6uVI",
+  authDomain: "spck-f1a02.firebaseapp.com",
+  databaseURL: "https://spck-f1a02-default-rtdb.firebaseio.com",
+  projectId: "spck-f1a02",
+  storageBucket: "spck-f1a02.appspot.com",
+  messagingSenderId: "316762566527",
+  appId: "1:316762566527:web:acfb63e3a172864dcf344a",
 };
 
 // Initialize Firebase
@@ -35,6 +36,10 @@ const routeMeta = [
   },
   {
     route: "/IDH-AccountSetting.html",
+    requireAuth: true, //can dang nhap: ko can
+  },
+  {
+    route: "/IDH-WriteBlog.html",
     requireAuth: true, //can dang nhap: ko can
   },
   {
@@ -83,16 +88,3 @@ function stopLoading() {
 
   document.body.classList.remove("is-loading");
 }
-// document.addEventListener("DOMContentLoaded", function () {
-//     const isLogin = localStorage.getItem("isLogin");
-
-//     if (!isLogin) {
-//     alert("You haven't logged in yet");
-//     window.location.href = "/IDH-Login.html";
-
-//     document.getElementById("logout-button").style.display = "none";
-//     } else {
-//     document.getElementById("login-button").style.display = "none";
-//     document.getElementById("register-button").style.display = "none";
-//     }
-// })
