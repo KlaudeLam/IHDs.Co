@@ -2,7 +2,7 @@ import {
   getAuth,
   signOut,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
-import app from "./IDH-Common.js";
+import app from "./IHDs-Common.js";
 
 const auth = getAuth(app);
 

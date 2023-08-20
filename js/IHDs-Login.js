@@ -4,7 +4,7 @@ import {
   GoogleAuthProvider,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
-import app from "./IDH-Common.js";
+import app from "./IHDs-Common.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("login-form");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     localStorage.setItem("isLogin", true);
     alert("Successfully log in");
-    window.location.href = "/IDH-User.html";
+    window.location.href = "/IHDs-User.html";
   });
 
   const logInWithGoogle = document.getElementById("google-log-in");

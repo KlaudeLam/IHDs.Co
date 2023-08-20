@@ -3,6 +3,6 @@
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "start": "npx tailwindcss -i ./css/IDH-Common.css -o ./dist/IDH-Common.css --watch"
+    "start": "npx tailwindcss -i ./css/IHDs-Common.css -o ./dist/IHDs-Common.css --watch"
   }
 }

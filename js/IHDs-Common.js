@@ -25,41 +25,41 @@ export default app;
 
 const routeMeta = [
   {
-    route: "/IDH-Login.html",
+    route: "/IHDs-Login.html",
     requireAuth: false, //can dang nhap: ko can
     requireGuest: true, //can la guest = can (dang nhap thi ko the access trang nay nua)
   },
   {
-    route: "/IDH-Signup.html",
+    route: "/IHDs-Signup.html",
     requireAuth: false, //can dang nhap: ko can
     requireGuest: true, //can la guest = can (dang nhap thi ko the access trang nay nua)
   },
   {
-    route: "/IDH-AccountSetting.html",
+    route: "/IHDs-AccountSetting.html",
     requireAuth: true, 
   },
   {
-    route: "/IDH-WriteBlog.html",
+    route: "/IHDs-WriteBlog.html",
     requireAuth: true, 
   },
   {
-    route: "/IDH-User.html",
+    route: "/IHDs-User.html",
     requireAuth: true,
   },
   {
-    route: "/IDH-AboutUs.html",
+    route: "/IHDs-AboutUs.html",
     requireAuth: false, //can dang nhap: ko can
   },
   {
-    route: "/IDH-HappinessBlogspot.html",
+    route: "/IHDs-HappinessBlogspot.html",
     requireAuth: false, //can dang nhap: ko can
   },
   {
-    route: "/IDH-Homepage.html",
+    route: "/IHDs-Homepage.html",
     requireAuth: false, //can dang nhap: ko can
   },
   {
-    route: "/IDH-Blog.html",
+    route: "/IHDs-Blog.html",
     requireAuth: false, //can dang nhap: ko can
   },
 ];
@@ -76,12 +76,12 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/auth.user
     if (meta?.requireGuest) {
-      window.location.href = "/IDH-Homepage.html";
+      window.location.href = "/IHDs-Homepage.html";
     }
   } else {
     // User is signed out
     if (meta?.requireAuth) {
-      window.location.href = "/IDH-Login.html";
+      window.location.href = "/IHDs-Login.html";
     }
   }
   stopLoading();

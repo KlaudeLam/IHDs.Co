@@ -1,4 +1,4 @@
-import app from "./IDH-Common.js";
+import app from "./IHDs-Common.js";
 import {
   getAuth,
   onAuthStateChanged,
@@ -35,7 +35,7 @@ onAuthStateChanged(auth, (user) => {
         if (Object.hasOwnProperty.call(data, key)) {
           const element = data[key];
           document.querySelector("#polaroid-display").innerHTML += `
-            <a class="post" href="/IDH-Blog.html?id=${key}" class="no-underline">
+            <a class="post" href="/IHDs-Blog.html?id=${key}" class="no-underline">
               <img
                 src="${element.thumbnail}"
                 alt=""

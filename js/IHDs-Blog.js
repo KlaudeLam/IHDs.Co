@@ -1,4 +1,4 @@
-import app from "./IDH-Common.js";
+import app from "./IHDs-Common.js";
 import {
   getDatabase,
   ref,

@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", function(){
         // document.getElementById(username).insertAdjacentHTML("beforeend", `${username}`);
 
         alert("Successfully saved changes");
-        window.location.href = "/IDH-User.html";
+        window.location.href = "/IHDs-User.html";
     })
 })

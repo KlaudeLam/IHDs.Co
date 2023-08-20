@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("password", password);
 
         alert("Successfully sign up");
-        window.location.href = "/IDH-AccountSetting.html";
+        window.location.href = "/IHDs-AccountSetting.html";
         });
 });

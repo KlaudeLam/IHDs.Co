@@ -11,7 +11,7 @@ import {
   push,
   set,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
-import app from "./IDH-Common.js";
+import app from "./IHDs-Common.js";
 
 const auth = getAuth(app);
 const database = getDatabase(app);
@@ -110,7 +110,7 @@ saveButton?.addEventListener("click", async (e) => {
             color: "rgb(0, 0, 0)",
           },
           callback: function () {
-            window.location.href = "/IDH-User.html";
+            window.location.href = "/IHDs-User.html";
           },
         }).showToast();
       });
