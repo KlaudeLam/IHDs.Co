@@ -124,6 +124,7 @@ header img {
   width: 270px;
   margin-right: 9%;
 }
+
 .header-big {
   font-size: 50px;
   font-weight: 500;
@@ -133,6 +134,7 @@ header img {
   display: flex;
   gap: 5%;
 }
+
 
 /* WEB-CONTENT */
 .body-part {
@@ -213,3 +215,4 @@ footer {
   justify-content: center;
   padding-left: 20px;
 }
+
