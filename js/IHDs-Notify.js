@@ -16,3 +16,12 @@ channel.bind("my-event", function (data) {
     },
   }).showToast();
 });
+
+const obj = {
+  appId: "1655286",
+  key: "1548eaf3f1a3cf6520ca",
+  secret: "9eeda596d39c688d9812",
+  cluster: "ap1",
+};
+var trigger = new Pusher("1548eaf3f1a3cf6520ca", obj);
+trigger.trigger("my-channel", "my-event", { "message": "hello world" });
