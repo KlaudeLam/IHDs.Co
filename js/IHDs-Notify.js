@@ -23,5 +23,3 @@ const obj = {
   secret: "9eeda596d39c688d9812",
   cluster: "ap1",
 };
-var trigger = new Pusher("1548eaf3f1a3cf6520ca", obj);
-trigger.trigger("my-channel", "my-event", { "message": "hello world" });
