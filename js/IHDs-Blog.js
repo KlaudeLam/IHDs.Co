@@ -26,7 +26,7 @@ onValue(postRef, (snapshot) => {
         target="_blank"
         class="underline dark:text-violet-400"
       >
-        <span itemprop="name">Quanph</span></a
+        <span itemprop="name">Unknown User</span></a
       >on
       <time datetime="2021-02-12 15:34:18-0200">Feb 12th 2021</time>
     </p>
