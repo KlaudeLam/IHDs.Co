@@ -15,7 +15,7 @@ const firebaseConfig = {
   projectId: "idhco-c0614",
   storageBucket: "idhco-c0614.appspot.com",
   messagingSenderId: "162374943476",
-  appId: "1:162374943476:web:030f7995a6141aeb5fd4a1"
+  appId: "1:162374943476:web:7b5af3056959dd205fd4a1"
 };
 
 // Initialize Firebase
