@@ -13,6 +13,10 @@ const id = new URLSearchParams(window.location.search).get("id");
 const postRef = query(ref(database, "posts/" + id));
 onValue(postRef, (snapshot) => {
   const data = snapshot.val();
+  // Convert Time
+  const d = new Date(data.time);
+  const time = d.toDateString();
+  // Display information
   document.querySelector("#info").innerHTML = `
     <img src="${data.thumbnail}" alt="" class="w-full rounded object-cover" />
     <h1 class="text-4xl font-bold leadi md:text-5xl">
@@ -26,9 +30,9 @@ onValue(postRef, (snapshot) => {
         target="_blank"
         class="underline dark:text-violet-400"
       >
-        <span itemprop="name">Unknown User</span></a
-      >on
-      <time datetime="2021-02-12 15:34:18-0200">Feb 12th 2021</time>
+        <span itemprop="name">${data.name}</span></a
+      > on
+      <time datetime="${d.toISOString()}">${time}</time>
     </p>
   `;
   console.log(data);
