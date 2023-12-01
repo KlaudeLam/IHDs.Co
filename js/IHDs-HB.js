@@ -11,7 +11,7 @@ import {
 const database = getDatabase(app);
 const postRef = query(
   ref(database, "posts"),
-  orderByChild("uid")
+  orderByChild("time")
 );
 onValue(postRef, (snapshot) => {
   const data = snapshot.val();
