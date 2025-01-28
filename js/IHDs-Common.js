@@ -75,10 +75,12 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/auth.user
+    document.getElementById("nav-login").style.display = "none"
     if (meta?.requireGuest) {
       window.location.href = "/IHDs-Homepage.html";
     }
   } else {
+    document.getElementById("nav-login").style.display = "inline-block"
     // User is signed out
     if (meta?.requireAuth) {
       window.location.href = "/IHDs-Login.html";
