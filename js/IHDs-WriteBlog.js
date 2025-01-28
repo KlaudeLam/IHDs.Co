@@ -45,7 +45,7 @@ const editor = new EditorJS({
       inlineToolbar: true,
     },
     list: {
-      class: List,
+      class: EditorjsList,
       inlineToolbar: true,
       config: {
         defaultStyle: "unordered",
@@ -64,7 +64,7 @@ saveButton?.addEventListener("click", async (e) => {
   e.stopPropagation();
   const title = document.getElementById("first_name").value;
   // Lấy thumbnail
-  const thumbnail = document.getElementById("dropzone-file").files[0]; 
+  const thumbnail = document.getElementById("dropzone-file").files[0];
   // Lấy content
   const content = await editor.save();
   // Kiểm tra có mục nào chưa điền chưa (Toastify)
@@ -80,7 +80,7 @@ saveButton?.addEventListener("click", async (e) => {
     }).showToast();
     return;
   }
-// Lưu ảnh theo syntax của firebase
+  // Lưu ảnh theo syntax của firebase
   const storageRef = ref(storage, `${thumbnail.name}`);
   // uploadbytes đưa ảnh lên
   await uploadBytes(storageRef, thumbnail).then((snapshot) => {
