@@ -1,11 +1,10 @@
-
 /* NAVBAR */
 #nav-options li:not(#nav-hb):hover {
-    background-color: rgb(238, 237, 237);
-    cursor: pointer;
+  background-color: rgb(238, 237, 237);
+  cursor: pointer;
 }
 #nav-hb {
-    background-color:rgb(255, 242, 125);
+  background-color: rgb(255, 242, 125);
 }
 
 /* POSTCARD */
@@ -13,163 +12,163 @@
     background-image: url("https://www.pngkit.com/png/full/91-911156_dot-grid-png-black-and-white.png");
 } */
 #postcard-prompt {
-    margin-top: 40px;
-    min-width: 800px;
-    height: 540px;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    background-color:rgb(252, 232, 57);
-    display: flex;
-    justify-content: space-between;
+  margin-top: 40px;
+  min-width: 800px;
+  height: 540px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(252, 232, 57);
+  display: flex;
+  justify-content: space-between;
 }
 #postcard-prompt img {
-    width: 40%;
+  width: 40%;
 }
 #postcard-form {
-    width: 60%;
-    padding: 20px 50px;
+  width: 60%;
+  padding: 20px 50px;
 }
 #image-insert {
-    width: 40%;
-    padding: 20px;
+  width: 40%;
+  padding: 20px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-right: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px dashed black;
 }
 #image-insert #frame {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid none;
-    width: 100%;
-    height: 80%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid none;
+  width: 100%;
+  height: 80%;
 }
 #image-insert #image-label-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #image-insert #image-label-input label {
-    font-size: 20px;
+  font-size: 20px;
 }
 .form-question {
-    margin-bottom: 15px;
-    /* width: 45%; */
+  margin-bottom: 15px;
+  /* width: 45%; */
 }
 .form-question label {
-    font-size: 15px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 .form-question textarea {
-    resize: none;
-    box-sizing: border-box;
-    margin-top: 13px;
-    padding: 2px;
-    border-radius: 5px;
-    width:100%;
-    min-width: 100%;
-    max-width: 100%;
-    height: 60px;
-    min-height: 60px;
-    max-height: 60px;
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 15px;
-    /* border: 1px solid black; */
+  resize: none;
+  box-sizing: border-box;
+  margin-top: 13px;
+  padding: 2px;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 15px;
+  /* border: 1px solid black; */
 }
 #dayname {
-    font-size: 45px;
-    border: none;
-    background-color:rgb(252, 232, 57);
-    color: black;
-    outline: none;
-    
+  font-size: 45px;
+  border: none;
+  background-color: rgb(252, 232, 57);
+  color: black;
+  outline: none;
 }
 
 /* BLOGPOST */
 /* BLOGPOST - Post */
 #polaroid-display {
-    height: auto;
-    width: 100%;
-    margin: 30px auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-evenly;
-    /* border: black solid 1px; */
+  height: auto;
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+  /* border: black solid 1px; */
 }
 .post {
-    margin-top: 30px;
-    padding: 20px 20px 40px 20px;
-    /* border: 1px solid black; */
-    border-radius: 1%;
-    background-color: white;
-    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-    width: 30%;
-    min-width: 300px;
-    height: 400px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    
+  margin-top: 30px;
+  padding: 20px 20px 40px 20px;
+  /* border: 1px solid black; */
+  border-radius: 1%;
+  background-color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  width: 30%;
+  min-width: 300px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .post:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
 }
 .post img {
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    border-radius: 2px;
-    margin: 10px;
-    width: 90%;
-    height: 234px;
-    object-fit: cover;
-    /* border: black solid 1px; */
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 2px;
+  margin: 10px;
+  width: 90%;
+  height: 234px;
+  object-fit: cover;
+  /* border: black solid 1px; */
 }
 .post .caption {
-    /* border: black solid 1px; */
-    width: 90%;
-    margin-top: 20px;
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 20px;
-    text-align: center;
+  /* border: black solid 1px; */
+  width: 90%;
+  margin-top: 20px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* NUMBER BUTTONS */
 #number-list {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 .number-button {
-    margin-top: 20px;
-    border-radius: 5px;
+  margin-top: 20px;
+  border-radius: 5px;
 
-    width: fit-content;
-    padding: 20px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: fit-content;
+  padding: 20px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .number-button > a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 .active {
-    background-color: black;
-    cursor: pointer;
+  background-color: black;
+  cursor: pointer;
 }
-.active>a, .number-button:hover>a {
-    color: white;
+.active > a,
+.number-button:hover > a {
+  color: white;
 }
-.number-button:not(.active):hover{
-    background-color: rgb(39, 39, 39);;
-    cursor: pointer;
+.number-button:not(.active):hover {
+  background-color: rgb(39, 39, 39);
+  cursor: pointer;
 }
-
