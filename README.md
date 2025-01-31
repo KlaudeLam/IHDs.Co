@@ -1,5 +1,5 @@
 # International Happiness DayS Corporation (IHDs.Co)
-A blogosphere for international user to share to the world and archive their happy moments throughout the year (https://ihdsco.netlify.app/)
+A blogosphere for international user to share to the world and archive their happy moments throughout the year (https://ihdsco.vercel.app/IHDs-Homepage.html)
 
 ## Purpose
 In recent years, the extensive coverage of bad news and dramas have negatively influenced people's mental health and relationships. Given the theme of International Happiness Day, I want to build a platform to spread positive energy and connect others.
